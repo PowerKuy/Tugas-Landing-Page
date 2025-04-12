@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelatihan HTML - Landing Page Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Nim Ganjil - Landing Page 1 Redesign -->
+    <!-- ============================== -->
+    <!-- Nama   : Ariel Dany Saputra    -->
+    <!-- Nim    : (******)-075          -->
+    <!-- Kelas  : TI-B                  -->
+    <!-- ============================== -->
+    <!-- Code ini original tanpa bantuan ChatGPT -->
+    <!-- Bisa Dipertanggungjawabkan -->
+    <!-- @! Dilarang Copy Paste !@ -->
+    <!-- ============================== -->
+    <script>
+        var button_menu = null;
+        function showMenu() {
+            button_menu.style.display = "block";
+        }
+
+        function dismissMenu() {
+            button_menu.style.display = "none";
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            button_menu = document.querySelector("#side-bar");
+        });
+    </script>
+    <!-- Side Bar untuk Hp -->
+    <div id="side-bar">
+        <ul class="poppins-medium">
+            <h1 class="poppins-bold" style="text-align: center; margin-bottom: 12px;">Menu</h1>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li class="btn-outline" style="background-color: #12121250; cursor: pointer;" onclick="dismissMenu();">
+                Kembali
+            </li>
+        </ul>
+    </div>
+    <!-- Blur View -->
+    <div class="blur-1"></div>
+    <div class="siluet-kanan-kiri"></div>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <h3 class="poppins-regular">Mahasiswa</h3>
+        </div>
+        <div class="menu-list">
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </div>
+        <div class="sembunyi" style="flex-grow: 1;"></div>
+        <div class="sembunyi flex-menu card_outline" style="width: 20px; z-index: 9999; height: 20px; justify-content: center; cursor: pointer; justify-items: center;" onclick='showMenu()'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+            </svg>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header>
+        <div class="card_outline inter-medium"># Pelatihan HTML</div>
+        <div class="judul inter-bold center">
+            <h1>Selamat Datang</h1> </br>
+            <h1 class="second">Di Pelatihan Kami</h1>
+        </div>
+        <p class="poppins-light text-gray">
+            Belajar membuat landing page pertama anda. <span class="sembunyi">Temukan pelatih favoritmu !</span>
+        </p>
+        <span class="poppins-light tunjukan">Temukan pelatih favoritmu !</span>
+        <ul class="fitur poppins-light">
+            <li>
+                <div class="card_filled">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                    </svg>
+                </div>
+                <p>Mudah Dipahami</p>
+            </li>
+            <li>
+                <div class="card_filled">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                    </svg>
+                </div>
+                <p>Pelatih Asik</p>
+            </li>
+            <li>
+                <div class="card_filled">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                    </svg>
+                </div>
+                <p>E-Sertifikat</p>
+            </li>
+        </ul>
+        <div style="height: 8px;"></div>
+        <div class="cta">
+            <button class="btn poppins-medium">Mulai Belajar</button>
+            <div class="btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+                </svg>
+            </div>
+        </div>
+    </header>
+    <!-- Tentang -->
+    <section id="about">
+        <div class="card_outline inter-medium"># About Us</div>
+        <div class="judul inter-bold">
+            <h1>Tentang <span class="second">Kami</span></h1>
+        </div>
+        <p class="text-gray poppins-light">Kami adalah penyedia pelatihan pemrograman web untuk pemula yang ingin
+            memulai karir di bidang teknologi.</p>
+        <ul class="base-section-ul">
+            <li class="card-siluet">
+                <h1 class="inter-medium">1</h1>
+                <p class="inter-bold text-sub-title">Pelatihan <br>Langsung</p>
+                <p class="poppins-light text-gray description">Belajar sambil langsung mempraktikkan kode.</p>
+            </li>
+            <li class="card-siluet">
+                <h1 class="inter-medium">2</h1>
+                <p class="inter-bold text-sub-title">Mudah <br>Dipahami</p>
+                <p class="poppins-light text-gray description">Materi disampaikan dengan bahasa yang sederhana.
+                </p>
+            </li>
+            <li class="card-siluet">
+                <h1 class="inter-medium">3</h1>
+                <p class="inter-bold text-sub-title">Gratis <br>Pembayaran</p>
+                <p class="poppins-light text-gray description">Tidak ada biaya untuk pelatihan dasar.</p>
+            </li>
+        </ul>
+    </section>
+    <!-- Layanan -->
+    <section id="services" style="margin-top: 40px;">
+        <div class="card_outline inter-medium"># Our Services</div>
+        <div class="judul inter-bold">
+            <h1>Layanan <span class="second">Kami</span></h1>
+        </div>
+        <p class="text-gray poppins-light">Kami memberikan layanan yang terbaik di pelatihan pemprograman web untuk
+            pemula.</p>
+        <ul class="base-section-ul">
+            <li class="card-siluet">
+                <h1 class="inter-medium">1</h1>
+                <p class="inter-bold text-sub-title">HTML Dasar</p>
+                <p class="poppins-light text-gray description">Kalian akan belajar struktur dasar HTML yang akan
+                    dijelaskan oleh pelatih professional kami.</p>
+            </li>
+            <li class="card-siluet">
+                <h1 class="inter-medium">2</h1>
+                <p class="inter-bold text-sub-title">Form HTML</p>
+                <p class="poppins-light text-gray description">Membuat formulir interaktif dengan mudah dan diberikan
+                    tips and trick oleh professional.
+                </p>
+            </li>
+            <li class="card-siluet">
+                <h1 class="inter-medium">3</h1>
+                <p class="inter-bold text-sub-title">Tabel HTML</p>
+                <p class="poppins-light text-gray description">Megatur data tabel yang baik dan benar, dan diberi
+                    pengetahuan umum tentang layouting.</p>
+            </li>
+        </ul>
+    </section>
+    <!-- Testimoni -->
+    <section id="testimoni" style="margin-top: 40px;">
+        <div class="card_outline inter-medium"># What people says</div>
+        <div class="judul inter-bold">
+            <h1>Apa Kata <span class="second">Peserta</span></h1>
+        </div>
+        <p class="text-gray poppins-light">Berikut adalah kata peserta yang telah menggunakan layanan kami.</p>
+        <ul class="base-section-ul">
+            <li class="card-siluet">
+                <div class="profile"></div>
+                <p class="inter-bold text-sub-title">Ariel Dany</p>
+                <p class="poppins-light text-gray" style="font-size: 12px;">@Mahasiswa</p>
+                <p class="poppins-light description">Pelatihannya sangat mudah dipahami untuk pemula seperti saya.</p>
+            </li>
+            <li class="card-siluet">
+                <div class="profile"></div>
+                <p class="inter-bold text-sub-title">Ani</p>
+                <p class="poppins-light text-gray" style="font-size: 12px;">@Guru</p>
+                <p class="poppins-light description">Materinya praktis dan langsung bisa diaplikasikan.</p>
+            </li>
+            <li class="card-siluet">
+                <div class="profile"></div>
+                <p class="inter-bold text-sub-title">PowerKuy</p>
+                <p class="poppins-light text-gray" style="font-size: 12px;">@Pemula</p>
+                <p class="poppins-light description">Aku menjadi lebih mudah memahami HTML dan berhasil membuat landing
+                    page.</p>
+            </li>
+        </ul>
+    </section>
+    <!-- Kontak -->
+    <section id="kontak" style="margin-top: 40px;">
+        <div class="card_outline inter-medium"># Contact Us</div>
+        <div class="judul inter-bold">
+            <h1>Kontak <span class="second">Kami</span></h1>
+        </div>
+        <p class="text-gray poppins-light">Berikut adalah kata peserta yang telah menggunakan layanan kami.</p>
+        <ul class="base-section-ul">
+            <li class="card-siluet">
+                <h1 class="inter-medium">@ Email</h1>
+                <p class="poppins-light">info@pelatihanhtml.com</p>
+            </li>
+            <li class="card-siluet">
+                <h1 class="inter-medium"># Telepon</h1>
+                <p class="poppins-light">(021) 123-4567</p>
+            </li>
+        </ul>
+    </section>
+    <div style="flex-grow: 1;"></div>
+    <!-- Footer -->
+    <footer class="poppins-light"
+        style="background-color: #121212; color: white; text-align: center; padding: 20px; font-size: 12px; margin-top: 20px;">
+        <p>&copy; 2025 Pelatihan HTML Dasar. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
