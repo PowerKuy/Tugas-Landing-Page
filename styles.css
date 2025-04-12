@@ -342,7 +342,15 @@ header{
     min-height: 50px;
     border-radius: 50%;
     background-image: url("foto.png");
-    background-size: contain;
+    background-size: cover;
+}
+
+.profile1 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtwqp8tOIwcnmHB3iUtlk_eoEalMHzHPpReQ&s");
+}
+
+.profile2 {
+    background-image: url("https://kudos.tv/cdn/shop/files/Mob_Psycho_300x.png?v=1679069332");
 }
 
 #testimoni .card-siluet {
