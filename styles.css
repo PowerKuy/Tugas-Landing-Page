@@ -289,6 +289,24 @@ header{
     border: solid 1px rgba(255, 255, 255, 0.15);
     border-radius: 13px;
     height: 100%;
+    overflow: hidden;
+}
+
+.card-siluet svg {
+    z-index: 99;
+    transform: translateZ(0);
+    contain: layout paint;
+    position: absolute;
+    width: fit-content;
+    height: 80%;
+    opacity: 0.05;
+    right: 0;
+    top: -50%;
+    translate: 20% 30%;
+}
+
+#testimoni .card-siluet svg {
+    opacity: 0.02;
 }
 
 .base-section-ul li {
