@@ -383,8 +383,8 @@ header{
 
 @property --angle {
     syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+    inherits: true;
+    initial-value: 0turn;
 }
 
 .card_outline {
@@ -397,7 +397,7 @@ header{
     position: relative;
 }
 
-.card_outline::after {
+.card_outline::after, .card_outline::before {
     --angle: 0deg;
     content: '';
     width: 100%;
@@ -409,16 +409,18 @@ header{
     padding: 2px;
     border-radius: 13px;
     z-index: -1;
+    background-origin: border-box;
     background: conic-gradient(from var(--angle), transparent 50%, #A100FF);
-    animation: 2s spin ease-in infinite;
+    animation: 2.5s spin linear infinite;
+}
+
+.card_outline::before {
+    filter: blur(1.5rem);
 }
 
 @keyframes spin {
-    0% {
-        --angle: 0deg;
-    }
-    100% {
-        --angle: 360deg;
+    to {
+        --angle: 1turn;
     }
 }
 
