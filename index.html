@@ -20,6 +20,7 @@
     <!-- ============================== -->
     <script>
         var button_menu = null;
+        var nav = null;
         function showMenu() {
             button_menu.style.display = "block";
         }
@@ -29,16 +30,28 @@
         }
         document.addEventListener("DOMContentLoaded", function () {
             button_menu = document.querySelector("#side-bar");
+            nav = document.querySelector("#navigation");
         });
+
+        document.addEventListener("scroll", function() {
+            var scroll = window.scrollY;
+            if(scroll < window.innerHeight) {
+                nav.style.backdropFilter = "blur(0px)";
+                nav.style.borderBottomWidth = "0px";
+            }else {
+                nav.style.backdropFilter = "blur(1.5rem)";
+                nav.style.borderBottomWidth = "1px";
+            }
+        })
     </script>
     <!-- Side Bar untuk Hp -->
     <div id="side-bar">
         <ul class="poppins-medium">
             <h1 class="poppins-bold" style="text-align: center; margin-bottom: 12px;">Menu</h1>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Tentang</a></li>
-            <li><a href="#">Layanan</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
             <li class="btn-outline" style="background-color: #12121250; cursor: pointer;" onclick="dismissMenu();">
                 Kembali
             </li>
@@ -48,16 +61,16 @@
     <div class="blur-1"></div>
     <div class="siluet-kanan-kiri"></div>
     <!-- Navigation -->
-    <nav>
+    <nav id="navigation">
         <div class="logo">
             <h3 class="poppins-regular">Mahasiswa</h3>
         </div>
         <div class="menu-list">
             <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Tentang</a></li>
-                <li><a href="#">Layanan</a></li>
-                <li><a href="#">Kontak</a></li>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
             </ul>
         </div>
         <div class="sembunyi" style="flex-grow: 1;"></div>
@@ -71,7 +84,7 @@
         </div>
     </nav>
     <!-- Hero Section -->
-    <header>
+    <header id="home">
         <div class="card_outline inter-medium"># Pelatihan HTML</div>
         <div class="judul inter-bold center">
             <h1>Selamat Datang</h1> </br>
