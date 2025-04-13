@@ -37,6 +37,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -99;
+    transform: translateZ(0);
 }
 
 #side-bar {
@@ -259,6 +260,8 @@ header{
 }
 
 .siluet-kanan-kiri {
+    transform: translateZ(0);
+    contain: layout paint;
     position: absolute;
     width: 100%;
     top: 50;
@@ -307,20 +310,14 @@ header{
 }
 
 .btn {
+    transition: 0.3s linear;
     padding: 16px 50px;
     background-color: #FFFFFF;
     color: black;
     border: solid 1px #00000050;
     border-radius: 12px;
     cursor: pointer;
-}
-
-.btn:hover {
-    padding: 16px 50px;
-    background-color: #00000010;
-    border-radius: 13px;
-    border: #FFFFFF15 1px solid;
-    color: white;
+    position: relative;
 }
 
 .btn-outline {
@@ -387,6 +384,11 @@ header{
     initial-value: 0turn;
 }
 
+svg {
+    contain: layout paint;
+    pointer-events: none;
+}
+
 .card_outline {
     width: fit-content;
     padding: 11px 19px;
@@ -397,7 +399,7 @@ header{
     position: relative;
 }
 
-.card_outline::after, .card_outline::before {
+.card_outline::after, .card_outline::before, .btn:hover::before {
     --angle: 0deg;
     content: '';
     width: 100%;
@@ -412,6 +414,17 @@ header{
     background-origin: border-box;
     background: conic-gradient(from var(--angle), transparent 50%, #A100FF);
     animation: 2.5s spin linear infinite;
+}
+
+.btn:hover {
+    transition: all 1s linear;
+    color: white;
+    background-color: rgb(21, 21, 21);
+    border: solid 1px #4a0374;
+}
+
+.btn::before {
+    filter: blur(1.5rem);
 }
 
 .card_outline::before {
