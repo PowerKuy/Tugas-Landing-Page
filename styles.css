@@ -291,7 +291,10 @@ header{
     height: 100%;
     overflow: hidden;
 }
-
+svg {
+    contain: layout paint;
+    pointer-events: none;
+}
 .card-siluet svg {
     z-index: 99;
     transform: translateZ(0);
@@ -400,11 +403,6 @@ header{
     syntax: "<angle>";
     inherits: true;
     initial-value: 0turn;
-}
-
-svg {
-    contain: layout paint;
-    pointer-events: none;
 }
 
 .card_outline {
