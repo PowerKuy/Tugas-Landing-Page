@@ -381,7 +381,48 @@ header{
     width: 24px;
 }
 
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
 .card_outline {
+    width: fit-content;
+    padding: 11px 19px;
+    font-size: 14px;
+    background-color: rgb(21, 21, 21);
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    border-radius: 13px;
+    position: relative;
+}
+
+.card_outline::after {
+    --angle: 0deg;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 2px;
+    border-radius: 13px;
+    z-index: -1;
+    background: conic-gradient(from var(--angle), transparent 50%, #A100FF);
+    animation: 2s spin ease-in infinite;
+}
+
+@keyframes spin {
+    0% {
+        --angle: 0deg;
+    }
+    100% {
+        --angle: 360deg;
+    }
+}
+
+.card_outlined {
     width: fit-content;
     padding: 11px 19px;
     font-size: 14px;
