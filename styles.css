@@ -281,6 +281,10 @@ header{
     opacity: 0.2;
 }
 .card-siluet:hover {
+    svg {
+        transition: all 0.3s cubic-bezier(0.3, 0.8, 0.3, 2.3);
+        opacity: 0.06!important;
+    };
     transition: all 0.3s cubic-bezier(0.3, 0.8, 0.3, 2.3);
     transform: translateY(-1.2%);
 }
@@ -460,6 +464,7 @@ svg {
     right: 0;
     top: -50%;
     translate: 20% 30%;
+    transition: all cubic-bezier(0.3, 0.8, 0.3, 2.3);
 }
 
 #testimoni .card-siluet svg {
