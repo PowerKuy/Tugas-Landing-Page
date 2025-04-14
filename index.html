@@ -33,12 +33,12 @@
             nav = document.querySelector("#navigation");
         });
 
-        document.addEventListener("scroll", function() {
+        document.addEventListener("scroll", function () {
             var scroll = window.scrollY;
-            if(scroll < window.innerHeight) {
+            if (scroll < (window.innerHeight * 0.3)) {
                 nav.style.backdropFilter = "blur(0px)";
                 nav.style.borderBottomWidth = "0px";
-            }else {
+            } else {
                 nav.style.backdropFilter = "blur(1.5rem)";
                 nav.style.borderBottomWidth = "1px";
             }
@@ -97,6 +97,9 @@
         <ul class="fitur poppins-light">
             <li>
                 <div class="card_filled">
+                    <img class="sparkle" src="sparkle.svg" />
+                    <img class="sparkle" src="sparkle.svg" />
+                    <img class="sparkle" src="sparkle.svg" />
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -107,6 +110,9 @@
             </li>
             <li>
                 <div class="card_filled">
+                    <img class="sparkle" src="sparkle.svg" />
+                    <img class="sparkle" src="sparkle.svg" />
+                    <img class="sparkle" src="sparkle.svg" />
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -117,6 +123,9 @@
             </li>
             <li>
                 <div class="card_filled">
+                    <img class="sparkle" src="sparkle.svg" />
+                    <img class="sparkle" src="sparkle.svg" />
+                    <img class="sparkle" src="sparkle.svg" />
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -142,7 +151,7 @@
     <section id="about">
         <div class="card_outline inter-medium"># About Us</div>
         <div class="judul inter-bold">
-            <h1>Tentang <span class="second">Kami</span></h1>
+            <h1>Tentang <span class="second shimmer_shimmer">Kami</span></h1>
         </div>
         <p class="text-gray poppins-light">Kami adalah penyedia pelatihan pemrograman web untuk pemula yang ingin
             memulai karir di bidang teknologi.</p>
@@ -186,7 +195,7 @@
     <section id="services" style="margin-top: 40px;">
         <div class="card_outline inter-medium"># Our Services</div>
         <div class="judul inter-bold">
-            <h1>Layanan <span class="second">Kami</span></h1>
+            <h1>Layanan <span class="second shimmer_shimmer">Kami</span></h1>
         </div>
         <p class="text-gray poppins-light">Kami memberikan layanan yang terbaik di pelatihan pemprograman web untuk
             pemula.</p>
@@ -216,7 +225,7 @@
     <section id="testimoni" style="margin-top: 40px;">
         <div class="card_outline inter-medium"># What people says</div>
         <div class="judul inter-bold">
-            <h1>Apa Kata <span class="second">Peserta</span></h1>
+            <h1>Apa Kata <span class="second shimmer_shimmer">Peserta</span></h1>
         </div>
         <p class="text-gray poppins-light">Berikut adalah kata peserta yang telah menggunakan layanan kami.</p>
         <ul class="base-section-ul">
@@ -228,7 +237,7 @@
                 </svg>
                 <div class="profile"></div>
                 <p class="inter-bold text-sub-title">Ariel Dany</p>
-                <p class="poppins-light text-gray" style="font-size: 12px;">@Mahasiswa</p>
+                <p class="poppins-light text-gray shimmer_shimmer" style="font-size: 12px; animation-delay: 1s; animation-duration: 5s;">@Mahasiswa</p>
                 <p class="poppins-light description">Pelatihannya sangat mudah dipahami untuk pemula seperti saya.</p>
             </li>
             <li class="card-siluet">
@@ -240,7 +249,7 @@
 
                 <div class="profile profile1"></div>
                 <p class="inter-bold text-sub-title">Ani</p>
-                <p class="poppins-light text-gray" style="font-size: 12px;">@Guru</p>
+                <p class="poppins-light text-gray shimmer_shimmer" style="font-size: 12px; animation-delay: 2s; animation-duration: 5s;">@Guru</p>
                 <p class="poppins-light description">Materinya praktis dan langsung bisa diaplikasikan.</p>
             </li>
             <li class="card-siluet">
@@ -252,7 +261,7 @@
 
                 <div class="profile profile2"></div>
                 <p class="inter-bold text-sub-title">PowerKuy</p>
-                <p class="poppins-light text-gray" style="font-size: 12px;">@Pemula</p>
+                <p class="poppins-light text-gray shimmer_shimmer" style="font-size: 12px; animation-delay: 1.5s; animation-duration: 5s;">@Pemula</p>
                 <p class="poppins-light description">Aku menjadi lebih mudah memahami HTML dan berhasil membuat landing
                     page.</p>
             </li>
@@ -262,16 +271,32 @@
     <section id="kontak" style="margin-top: 40px;">
         <div class="card_outline inter-medium"># Contact Us</div>
         <div class="judul inter-bold">
-            <h1>Kontak <span class="second">Kami</span></h1>
+            <h1>Kontak <span class="second shimmer_shimmer">Kami</span></h1>
         </div>
         <p class="text-gray poppins-light">Berikut adalah kata peserta yang telah menggunakan layanan kami.</p>
         <ul class="base-section-ul">
             <li class="card-siluet">
-                <h1 class="inter-medium">@ Email</h1>
+                <div class="card_filled">
+                    <img class="sparkle" src="sparkle.svg" />
+                    <img class="sparkle" src="sparkle.svg" />
+                    <img class="sparkle" src="sparkle.svg" />
+                    <div style="width: 30px; height: 30px;">
+                        <img src="email.svg" style="padding: 4px;"/>
+                    </div>
+                </div>
+                <h1 class="inter-medium" style="background-color: rgb(21, 21, 21);">@ Email</h1>
                 <p class="poppins-light">info@pelatihanhtml.com</p>
             </li>
             <li class="card-siluet">
-                <h1 class="inter-medium"># Telepon</h1>
+                <div class="card_filled">
+                    <img class="sparkle" src="sparkle.svg" />
+                    <img class="sparkle" src="sparkle.svg" />
+                    <img class="sparkle" src="sparkle.svg" />
+                    <div style="width: 30px; height: 30px;">
+                        <img src="phone.svg" style="padding: 4px;"/>
+                    </div>
+                </div>
+                <h1 class="inter-medium" style="background-color: rgb(21, 21, 21);">@ Telepon</h1>
                 <p class="poppins-light">(021) 123-4567</p>
             </li>
         </ul>
