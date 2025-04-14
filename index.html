@@ -30,6 +30,9 @@
         }
         document.addEventListener("DOMContentLoaded", function () {
             button_menu = document.querySelector("#side-bar");
+            button_menu.addEventListener("click", function () {
+                dismissMenu();
+            });
             nav = document.querySelector("#navigation");
         });
 
@@ -47,14 +50,11 @@
     <!-- Side Bar untuk Hp -->
     <div id="side-bar">
         <ul class="poppins-medium">
-            <h1 class="poppins-bold" style="text-align: center; margin-bottom: 12px;">Menu</h1>
+            <h1 class="poppins-bold title-side">Menu</h1>
             <li><a href="#home">Beranda</a></li>
             <li><a href="#about">Tentang</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#kontak">Kontak</a></li>
-            <li class="btn-outline" style="background-color: #12121250; cursor: pointer;" onclick="dismissMenu();">
-                Kembali
-            </li>
         </ul>
     </div>
     <!-- Blur View -->
@@ -88,7 +88,7 @@
         <div class="card_outline inter-medium"># Pelatihan HTML</div>
         <div class="judul inter-bold center">
             <h1>Selamat Datang</h1> </br>
-            <h1 class="second">Di Pelatihan Kami</h1>
+            <h1 class="second"><span class="second shimmer_shimmer" style="animation-duration: 3.8s;">Di Pelatihan Kami</span></h1>
         </div>
         <p class="poppins-light text-gray">
             Belajar membuat landing page pertama anda. <span class="sembunyi">Temukan pelatih favoritmu !</span>
