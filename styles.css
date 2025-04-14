@@ -378,7 +378,29 @@ svg {
     position: relative;
     animation: shimmer 3s linear reverse infinite;
 }
-
+.shimmer_shimmer::after, .shimmer_shimmer::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("sparkle.svg");
+    position: absolute;
+    translate: -50% -50%;
+    top: -5%;
+    left: 105%;
+    transform: scale(0.3);
+    animation: sparkles 2s cubic-bezier(0.3, 0.8, 0.3, 2.1) infinite;
+}
+.shimmer_shimmer::before {
+    animation-delay: 0.7s;
+    top: 109%;
+    left: 20%;
+}
+.no_stars::after {
+    display: none;
+}
+.no_stars::before {
+    display: none;
+}
 @keyframes shimmer {
     0% {
         background-position: -200%;
