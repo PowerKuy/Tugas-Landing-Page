@@ -305,6 +305,37 @@ svg {
     contain: layout paint;
     pointer-events: none;
 }
+
+.card-siluet svg {
+    z-index: 99;
+    transform: translateZ(0);
+    contain: layout paint;
+    position: absolute;
+    width: fit-content;
+    height: 80%;
+    opacity: 0.05;
+    right: 0;
+    top: -50%;
+    translate: 20% 30%;
+}
+
+#testimoni .card-siluet svg {
+    opacity: 0.02;
+}
+
+.base-section-ul li {
+    height: fit-content;
+}
+
+.base-section-ul li h1 {
+    font-size: 18px;
+    width: 18px;
+    text-align: center;
+    padding: 7px;
+    background-color: #A100FF;
+    border-radius: 10px;
+}
+
 .card_filled::after, .card_filled::before {
     content: '';
     position: absolute;
@@ -425,36 +456,6 @@ svg {
     100% {
         opacity: 0;
     }
-}
-
-.card-siluet svg {
-    z-index: 99;
-    transform: translateZ(0);
-    contain: layout paint;
-    position: absolute;
-    width: fit-content;
-    height: 80%;
-    opacity: 0.05;
-    right: 0;
-    top: -50%;
-    translate: 20% 30%;
-}
-
-#testimoni .card-siluet svg {
-    opacity: 0.02;
-}
-
-.base-section-ul li {
-    height: fit-content;
-}
-
-.base-section-ul li h1 {
-    font-size: 18px;
-    width: 18px;
-    text-align: center;
-    padding: 7px;
-    background-color: #A100FF;
-    border-radius: 10px;
 }
 
 .text-sub-title {
