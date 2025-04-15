@@ -45,7 +45,8 @@
                 nav.style.backdropFilter = "blur(1.5rem)";
                 nav.style.borderBottomWidth = "1px";
             }
-        })
+            document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+        });
     </script>
     <!-- Side Bar untuk Hp -->
     <div id="side-bar">

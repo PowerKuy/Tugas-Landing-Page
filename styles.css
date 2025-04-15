@@ -846,6 +846,10 @@ svg {
         z-index: 99;
     }
 
+    header h1 {
+        font-size: 46px;
+    }
+
     .center {
         text-align: center;
     }
