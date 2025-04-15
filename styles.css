@@ -370,7 +370,7 @@ svg {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: -150%;
-    animation: shining2 4s linear infinite reverse;
+    animation: shining2 1s linear infinite reverse;
     border-radius: 12px;
     animation-delay: 0s;
 }
@@ -409,7 +409,7 @@ svg {
     }
 }
 
-.shimmer_shimmer {
+.shimmer_shimmer, .shimmer_shimmer_hover {
     content: '';
     background-clip: text;
     -webkit-background-clip: text;
@@ -422,7 +422,7 @@ svg {
 }
 
 .shimmer_shimmer::after,
-.shimmer_shimmer::before {
+.shimmer_shimmer::before, .shimmer_shimmer_hover::after, .shimmer_shimmer_hover::before {
     content: '';
     width: 20px;
     height: 20px;
@@ -435,10 +435,14 @@ svg {
     animation: sparkles 2s cubic-bezier(0.3, 0.8, 0.3, 2.1) infinite;
 }
 
-.shimmer_shimmer::before {
+.shimmer_shimmer::before, .shimmer_shimmer_hover::before {
     animation-delay: 0.7s;
     top: 109%;
     left: 20%;
+}
+
+.shimmer_shimmer_hover {
+    color: #000000;
 }
 
 .no_stars::after {
@@ -538,7 +542,6 @@ svg {
 }
 
 .btn {
-
     transition: 0.3s linear;
     padding: 16px 50px;
     background-color: #FFFFFF;
@@ -642,8 +645,12 @@ svg {
     animation: 2.5s spin linear infinite;
 }
 
+.btn:hover::before {
+    animation: 0.8s spin linear infinite;
+}
+
 .btn:hover {
-    transition: all 1s linear;
+    transition: all 0.3s linear;
     color: white;
     background-color: rgb(21, 21, 21);
     border: solid 1px #4a0374;
@@ -837,7 +844,7 @@ svg {
         display: flex;
         flex-direction: column;
         gap: 4px;
-        min-height: 70vh;
+        min-height: fit-content;
         height: fit-content;
         justify-content: start;
         align-items: center;
